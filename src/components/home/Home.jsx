@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.css";
-
+import imgpic from './PiyushGarg.png'
 const Home = () => {
-    // var typed = new Typed("#element", {
-    //     strings: [
-    //       "Software Engineer",
-    //       "Sofware Tester",
-    //       "Web Designer",
-    //       "Web Developer",
-    //     ],
-    //     typeSpeed: 50,
-    //   });
+
+  useEffect(()=>{
+    var typed = new Typed("#element", {
+      strings: [
+        "Software Engineer",
+        "Sofware Tester",
+        "Web Designer",
+        "Web Developer",
+      ],
+      typeSpeed: 50,
+    });
+  }
+  )
+
   return (
     <div>
       <section>
@@ -44,7 +49,7 @@ const Home = () => {
             </div>
           </div>
           <div className="profilePic">
-            <img src="./PiyushGarg.png" alt="Trulli" className="profileImage" />
+            <img src={imgpic} alt="Trulli" className="profileImage"></img>
           </div>
         </div>
       </section>
